@@ -1,0 +1,397 @@
+/* All images must have an alt tag
+The actual sizes of images, fonts, and containers should match as closely as possible to the provided desktop/mobile design.
+The font used is Poppins, weights 400, 700. You can find it for free at Google Fonts.
+The maximum width of the main container is 1140px. No content, other than background bleed should extend past this point.
+All text is either #fff
+The dark blue color is #0b1361
+The light blue color is #042a80
+The linear gradient is linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+All buttons and links (a tags) in the header (on the right only) should have a hover, and the cursor should be a pointer on hover. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #fff;
+  --secondary-color: #0b1361;
+  --primary-color: #042a80;
+  --gradient: linear-gradient(
+    109.8deg,
+    rgba(250, 111, 152, 1) 5.6%,
+    rgba(255, 189, 55, 1) 91.5%
+  );
+  --border: #072173;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==================== */
+/* Fonts, colors, layout */
+
+main {
+  background-color: var(--primary-color);
+}
+
+.staff-name {
+  background-image: var(--gradient);
+}
+
+header,
+footer {
+  background-color: var(--secondary-color);
+}
+
+.content {
+  max-width: 1140px;
+  margin: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+button {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+button,
+a {
+  text-transform: uppercase;
+}
+
+li {
+  display: inline;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.opener p {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.staff-card p {
+  font-size: 0.8rem;
+}
+
+main .information p {
+  font-size: 0.9rem;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
+/* ==================== */
+/* Header */
+
+header .content {
+  text-align: center;
+  padding: 0.75rem 0;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-left: 0.5rem;
+}
+
+/* header */
+/* ==================== */
+
+.content {
+  border-top: 3px solid var(--border);
+}
+
+.content .staff-cards {
+  border-bottom: 3px solid var(--border);
+}
+
+/* ==================== */
+/* Main Staff Cards Section */
+
+main .content {
+  text-align: center;
+  padding: 5.25rem 0 8rem 0;
+}
+
+main .content h2 {
+  margin-bottom: 2rem;
+}
+
+main .content p {
+  margin-bottom: 3.5rem;
+}
+
+.staff-cards {
+  padding-bottom: 5.5rem;
+}
+
+.staff-cards img {
+  width: 340px;
+}
+
+.staff-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0 auto 2.75rem;
+  width: 340px;
+}
+
+.staff-name {
+  position: absolute;
+  height: 68px;
+  width: 305px;
+  bottom: -30px;
+}
+
+/* Main Staff Cards Section */
+/* ==================== */
+
+/* ==================== */
+/* Main Information Section */
+
+.information {
+  padding-top: 5rem;
+}
+
+main .information h2 {
+  margin-bottom: 1rem;
+}
+
+main .information p {
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  background-image: var(--gradient);
+  border-radius: 10rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.information img {
+  width: 335px;
+}
+
+/* Main Information Section */
+/* ==================== */
+
+/* ==================== */
+/* Footer */
+
+footer .content {
+  padding: 1.25rem 0;
+}
+
+/* Footer */
+/* ==================== */
+
+@media only screen and (min-width: 600px) {
+  /* ==================== */
+  /* Header 2 */
+
+  header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  /* Header 2 */
+  /* ==================== */
+
+  /* ==================== */
+  /* Footer 2 */
+
+  footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Footer 2 */
+  /* ==================== */
+}
+
+@media only screen and (min-width: 700px) {
+  /* ==================== */
+  /* Above Staff Cards Section 2 */
+
+  main .content p {
+    margin-bottom: 2rem;
+  }
+
+  /* Above Staff Cards Section 2 */
+  /* ==================== */
+
+  /* ==================== */
+  /* Main Staff Cards Section 2 */
+
+  .staff-cards {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  .staff-card {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  .staff-cards img {
+    width: 305px;
+  }
+
+  .staff-card-1 img,
+  .staff-card-1 .staff-name {
+    align-self: flex-end;
+  }
+
+  .staff-card-2 img {
+    align-self: flex-start;
+  }
+
+  .staff-card-3 img {
+    align-self: flex-end;
+  }
+
+  .staff-card-4 img {
+    align-self: flex-start;
+  }
+
+  .staff-card-1 .staff-name,
+  .staff-card-3 .staff-name {
+    right: 15px;
+  }
+
+  .staff-card-2 .staff-name,
+  .staff-card-4 .staff-name {
+    left: 15px;
+  }
+
+  .staff-cards .staff-card:nth-of-type(odd) > * {
+    margin-right: 0.5rem;
+  }
+
+  .staff-cards .staff-card:nth-of-type(even) > * {
+    margin-left: 0.5rem;
+  }
+  .staff-name {
+    width: 275px;
+  }
+
+  /* Main Staff Cards Section 2 */
+  /* ==================== */
+
+  /* ==================== */
+  /* Main Information Section 2 */
+
+  .information img {
+    width: 640px;
+  }
+
+  /* Main Information Section 2 */
+  /* ==================== */
+}
+
+@media only screen and (min-width: 1100px) {
+  .opener p {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  /* ==================== */
+  /* Main Staff Cards Section 3 */
+
+  .staff-cards {
+    justify-content: space-evenly;
+  }
+
+  .staff-card {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .staff-card img {
+    align-self: center;
+  }
+
+  .staff-card .staff-name {
+    align-self: center;
+  }
+
+  .staff-cards img {
+    margin: 0;
+    width: 235px;
+  }
+
+  .staff-card-1 .staff-name,
+  .staff-card-2 .staff-name,
+  .staff-card-3 .staff-name,
+  .staff-card-4 .staff-name {
+    left: 0;
+    right: 0;
+    width: 215px;
+  }
+
+  .staff-cards .staff-card:nth-of-type(odd) > * {
+    margin: auto;
+  }
+
+  .staff-cards .staff-card:nth-of-type(even) > * {
+    margin: 0 auto;
+  }
+  /* Main Staff Cards Section 3 */
+  /* ==================== */
+
+  /* ==================== */
+  /* Main Information Section 3 */
+
+  .information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  /* Main Information Section 3 */
+  /* ==================== */
+}
+
+@media only screen and (min-width: 1200px) {
+  header .content,
+  main .content,
+  footer .content {
+    margin: 0 auto;
+  }
+}
