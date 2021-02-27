@@ -26,10 +26,6 @@ All buttons and links (a tags) in the header (on the right only) should have a h
   --border: #072173;
 }
 
-.content ul{
-  display: none;
-}
-
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -219,13 +215,13 @@ footer .content {
 @media only screen and (min-width: 600px) {
   /* ==================== */
   /* Header 2 */
-
+/* 
   header .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.9rem;
-  }
+  } */
 
   header h1 {
     margin: 0;
