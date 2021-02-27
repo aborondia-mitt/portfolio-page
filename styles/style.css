@@ -26,6 +26,10 @@ All buttons and links (a tags) in the header (on the right only) should have a h
   --border: #072173;
 }
 
+.content ul{
+  display: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
