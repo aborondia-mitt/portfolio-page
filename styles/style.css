@@ -161,7 +161,7 @@ main .content p {
   align-items: center;
   justify-content: flex-end;
   position: relative;
-  margin: 0 auto 2.75rem;
+  margin: 0 auto 5rem;
   width: 340px;
 }
 
@@ -169,7 +169,7 @@ main .content p {
   position: absolute;
   height: 68px;
   width: 305px;
-  bottom: -30px;
+  bottom: -68px;
 }
 
 /* Main Staff Cards Section */
